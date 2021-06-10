@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { createContext, useState } from 'react';
+
+export const AnimalContext = createContext()
 
 export const AnimalProvider = (props) => {
     const [ animals, setAnimals ] = useState([])
